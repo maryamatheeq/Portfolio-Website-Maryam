@@ -1186,6 +1186,16 @@ section.appear {
     padding: 2rem 1rem;
 } */
 
+#projects {
+    opacity: 1 !important; /* Fully visible */
+    transform: none !important; /* No animations */
+    transition: none !important; /* Disable delays */
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Fit the screen width */
+    padding: 1rem; /* Add some spacing */
+    height: auto; /* Prevent collapse */
+}
 
 /* body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -1201,9 +1211,6 @@ body, html {
     padding: 0;
     overflow-x: hidden; /* Disable horizontal scrolling */
     width: 100%; /* Ensure it fits the viewport width */
-}
-#projects {
-    animation: none !important; /* Disable animations */
 }
 
 
