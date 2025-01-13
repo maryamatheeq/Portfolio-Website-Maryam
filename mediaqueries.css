@@ -234,6 +234,18 @@
 } */
 
 @media (max-width: 768px) {
+    #projects {
+        opacity: 1 !important; /* Ensure visibility on mobile */
+        transform: none !important; /* Disable animation offset */
+        transition: none !important; /* Remove animation delays */
+        display: block; /* Ensure it is displayed */
+        margin: 0 auto; /* Center it */
+        width: 100%; /* Fit the screen */
+        padding: 1rem; /* Add some spacing */
+    }
+}
+
+@media (max-width: 768px) {
 #projects {
     display: block;
     padding: 1rem;
