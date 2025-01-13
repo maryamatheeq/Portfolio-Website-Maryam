@@ -1179,4 +1179,10 @@ section.appear {
     background: #fff; /* Keep the container background clean */
 }
 
+#projects {
+    display: block;
+    height: auto;
+    overflow: visible;
+    padding: 2rem 1rem;
+}
 
