@@ -1187,5 +1187,12 @@ section.appear {
 } */
 
 
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove extra margins that might cause layout shifts */
+}
 
+html {
+    width: 100%; /* Fit the screen width */
+}
 
