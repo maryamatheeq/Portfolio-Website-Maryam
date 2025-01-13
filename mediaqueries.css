@@ -233,44 +233,45 @@
     }
 } */
 
-
+/* 
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden; /* Prevent horizontal scrolling */
         margin: 0;
         padding: 0;
         width: 100%; /* Ensure the viewport width is 100% */
-    }
+    } */
 
+@media (max-width: 768px) {
     #projects {
-        opacity: 1 !important; /* Make the section visible */
-        transform: none !important; /* Disable animation offset */
-        transition: none !important; /* Prevent animation delays */
-        display: block; /* Ensure it is displayed */
-        margin: 0 auto; /* Center it */
-        width: 100%; /* Fit the screen */
+        display: block !important; /* Ensure it is displayed */
+        opacity: 1 !important; /* Make it fully visible */
+        transform: none !important; /* Remove animation offsets */
+        transition: none !important; /* Disable delays on mobile */
+        margin: 0 auto; /* Center-align */
         padding: 1rem; /* Add spacing */
-        height: auto; /* Prevent height collapse */
-        overflow: visible; /* Ensure content is not clipped */
+        width: 100%; /* Ensure it fits the screen */
+        height: auto; /* Prevent collapse */
     }
 
     .projects-grid {
         display: flex;
-        flex-direction: column; /* Stack projects vertically */
+        flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center-align items */
-        gap: 1rem; /* Add spacing between items */
+        gap: 1rem;
     }
 
     .project-card {
-        width: 90%; /* Fit the project cards within the screen */
+        width: 90%; /* Make project cards responsive */
         text-align: center;
     }
 
     img {
-        max-width: 100%; /* Scale images properly */
+        max-width: 100%; /* Ensure images scale properly */
         height: auto;
     }
 }
+
 
 
 
