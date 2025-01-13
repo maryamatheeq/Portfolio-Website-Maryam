@@ -201,5 +201,16 @@
         height: 2.5px;
     }
 }
+@media (max-width: 768px) {
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .project-card {
+        width: 90%; /* Ensure project cards fit the screen */
+    }
+}
 
 
