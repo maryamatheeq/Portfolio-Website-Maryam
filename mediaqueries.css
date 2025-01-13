@@ -214,12 +214,14 @@
 
 /* For larger screens (laptops and desktops) */
 @media (min-width: 769px) {
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 1rem; /* Space between grid items */
-        justify-items: center; /* Center-align items horizontally */
-    }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+    gap: 1rem; /* Reduce spacing between items */
+    justify-items: center; /* Align items in the center */
+    padding: 0 2rem; /* Add horizontal padding for better spacing */
+}
+
 
     .project-card {
         width: 100%; /* Ensure project cards fit within their grid cells */
