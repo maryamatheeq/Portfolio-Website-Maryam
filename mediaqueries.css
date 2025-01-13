@@ -233,55 +233,44 @@
     }
 } */
 
+
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensure the viewport width is 100% */
+    }
+
     #projects {
-        opacity: 1 !important; /* Ensure visibility on mobile */
+        opacity: 1 !important; /* Make the section visible */
         transform: none !important; /* Disable animation offset */
-        transition: none !important; /* Remove animation delays */
+        transition: none !important; /* Prevent animation delays */
         display: block; /* Ensure it is displayed */
         margin: 0 auto; /* Center it */
         width: 100%; /* Fit the screen */
-        padding: 1rem; /* Add some spacing */
+        padding: 1rem; /* Add spacing */
+        height: auto; /* Prevent height collapse */
+        overflow: visible; /* Ensure content is not clipped */
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center; /* Center-align items */
+        gap: 1rem; /* Add spacing between items */
+    }
+
+    .project-card {
+        width: 90%; /* Fit the project cards within the screen */
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%; /* Scale images properly */
+        height: auto;
     }
 }
 
-@media (max-width: 768px) {
-#projects {
-    display: block;
-    padding: 1rem;
-    margin: 0 auto;
-    width: 100%; /* Ensure it takes up the full width of the screen */
-    overflow: visible;
-}
-
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap; /* Wrap content if it overflows */
-    justify-content: center; /* Center the project cards */
-    gap: 1rem; /* Add spacing */
-}
-
-.project-card {
-    width: 100%; /* Make each card responsive */
-    text-align: center;
-}
-
-img {
-    max-width: 100%; /* Ensure all images scale within their containers */
-    height: auto;
-}
-}
-
-html, body {
-    width: 100%; 
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    margin: 0;
-    padding: 0;
-}
-
-* {
-    max-width: 100%; /* Prevent any element from exceeding the screen width */
-    box-sizing: border-box; /* Ensure consistent sizing */
-}
 
 
