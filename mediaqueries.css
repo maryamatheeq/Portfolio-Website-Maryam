@@ -212,7 +212,7 @@
         width: 90%; /* Ensure project cards fit the screen */
     }
 } */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #projects {
         display: block;
         margin: 0 auto;
@@ -230,6 +230,27 @@
 
     .project-card {
         width: 90%; /* Fit each project card to the screen */
+    }
+} */
+
+@media (max-width: 768px) {
+    #projects {
+        display: block; /* Ensure visibility */
+        margin: 0 auto; /* Center section */
+        padding: 1rem; /* Add some spacing */
+        width: 100%; /* Ensure it fits the screen width */
+    }
+
+    .projects-grid {
+        display: flex; /* Make the grid visible */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        gap: 1rem; /* Add space between project cards */
+    }
+
+    .project-card {
+        width: 90%; /* Make project cards fit the screen */
+        text-align: center;
     }
 }
 
