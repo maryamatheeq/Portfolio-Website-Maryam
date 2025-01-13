@@ -234,43 +234,7 @@
 } */
 
 /* 
-@media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        margin: 0;
-        padding: 0;
-        width: 100%; /* Ensure the viewport width is 100% */
-    } */
 
-@media (max-width: 768px) {
-    #projects {
-        display: block !important; /* Ensure it is displayed */
-        opacity: 1 !important; /* Make it fully visible */
-        transform: none !important; /* Remove animation offsets */
-        transition: none !important; /* Disable delays on mobile */
-        margin: 0 auto; /* Center-align */
-        padding: 1rem; /* Add spacing */
-        width: 100%; /* Ensure it fits the screen */
-        height: auto; /* Prevent collapse */
-    }
-
-    .projects-grid {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items */
-        gap: 1rem;
-    }
-
-    .project-card {
-        width: 90%; /* Make project cards responsive */
-        text-align: center;
-    }
-
-    img {
-        max-width: 100%; /* Ensure images scale properly */
-        height: auto;
-    }
-}
 
 
 
