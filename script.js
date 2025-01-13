@@ -32,20 +32,38 @@ function toggleMenu() {
         type();
     });
 
+// document.addEventListener("DOMContentLoaded", () => {
+//         const sections = document.querySelectorAll("section");
+    
+//         const observer = new IntersectionObserver((entries, observer) => {
+//             entries.forEach(entry => {
+//                 if (entry.isIntersecting) {
+//                     entry.target.classList.add("appear");
+//                     observer.unobserve(entry.target); // Stop observing once it's visible
+//                 }
+//             });
+//         }, {
+//             threshold: 0.2, // Trigger when 20% of the section is in view
+//         });
+    
+//         sections.forEach(section => observer.observe(section));
+//     });
+
 document.addEventListener("DOMContentLoaded", () => {
-        const sections = document.querySelectorAll("section");
-    
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("appear");
-                    observer.unobserve(entry.target); // Stop observing once it's visible
-                }
-            });
-        }, {
-            threshold: 0.2, // Trigger when 20% of the section is in view
+    const sections = document.querySelectorAll("section:not(#projects)"); // Exclude the #projects section
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("appear");
+                observer.unobserve(entry.target); // Stop observing once visible
+            }
         });
-    
-        sections.forEach(section => observer.observe(section));
+    }, {
+        threshold: 0.1, // Trigger when 10% of the section is visible
     });
+
+    sections.forEach((section) => observer.observe(section));
+});
+
 
