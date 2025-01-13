@@ -1,0 +1,1182 @@
+/* General */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playball&family=Rochester&family=Style+Script&display=swap');
+
+*  {
+    margin : 0;
+    padding : 0;
+
+}
+body {
+    font-family: 'Lobster Two', sans-serif;
+}
+html {
+    scroll-behaviour: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85)
+}
+
+/* TRANSITION */
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+
+/* DESKTOP NAV */
+
+nav, .nav-links {
+    display: flex;
+}
+
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+
+.nav-links {
+    gap: 2rem;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181)
+}
+.logo{
+    font-size: 2rem;
+}
+.logo:hover {
+    cursor: default;
+
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+    }
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+    
+/* SECTIONS */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p{
+    font-weight: 600;
+}
+
+.section__text_p1 {
+    text-align: center;
+}
+
+.section__text_p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+} 
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+} 
+
+/* BUTTONS */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, 
+.btn-color-2{
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover, 
+.btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-1, 
+.btn-color-2:hover{
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2{
+    background: none;
+}
+
+.btn-color-2:hover{
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    position: relative;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container{
+    display: flex;
+}
+    
+.about-pic{
+    border-radius: 2rem;
+}
+
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience{
+    position: relative;
+}
+
+.experience{
+    position: relative;
+}
+
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects{
+    position: relative;
+}
+
+.color-container{
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/* .contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+} */
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon{
+    height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+/* Blinking Cursor */
+.cursor {
+    display: inline-block;
+    animation: blink-cursor 0.7s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+    50% { opacity: 0; }
+}
+
+/* Center Align the About Section */
+#about {
+    text-align: center;
+}
+
+/* Remove the Section Container's Image */
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for Experience and Education Containers */
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.details-container {
+    width: 200px; /* Adjust width as needed */
+}
+
+/* Code Window Style */
+.about-code-window {
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    overflow: hidden;
+}
+
+/* Header for Code Window with Traffic Light Dots */
+.code-window-header {
+    background-color: #e8e8e8;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+/* Styling for About Popup Paragraph */
+.about-popup {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.about-popup p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+/* Centered Experience and Education cards */
+.about-containers {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto; /* Centered with added margin */
+}
+
+/* Side-by-side layout for GIF and Description */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center GIF and Description vertically */
+    gap: 2rem;
+    margin-top: 3rem; /* Adds more space between cards and GIF */
+}
+
+/* GIF styling */
+.giphy-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem; /* Moves the GIF further down */
+}
+
+.giphy-gif {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Description styling */
+.about-description {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+/* Code window styling */
+.about-code-window {
+    max-width: 500px;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Code window header with dots */
+.code-window-header {
+    background-color: #e8e8e8;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+/* Styling for text inside the code window */
+.about-popup {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.about-popup p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-containers {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .giphy-gif {
+        max-width: 100%;
+    }
+
+    .details-container {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Full-Page Intro Container */
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Set to pure white */
+    padding: 0;
+    margin: 0;
+    box-shadow: none; /* Remove any shadow effect */
+}
+
+/* Intro Window Style */
+.intro-window {
+    max-width: 700px;
+    width: 100%;
+    background-color: #ffffff; /* White window */
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+    overflow: hidden;
+}
+
+/* Header Bar with Dots */
+.intro-header {
+    background-color: #ffffff; /* White to match the window */
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05); /* Very light shadow for subtle separation */
+}
+
+.intro-header {
+    background-color: #f0f0f0; /* Light gray for the top bar */
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05); /* Very light shadow for separation */
+}
+
+
+/* Content Inside Intro Window */
+.intro-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Thunder Icon Styling */
+.thunder-icon {
+    font-size: 1.5rem;
+    color: #ffd700; /* Bright yellow color for thunderbolt */
+    animation: flicker 1.5s infinite alternate ease-in-out;
+    margin: 0 5px;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+    75% { opacity: 0.6; transform: scale(0.9); }
+}
+
+/* Greeting and Name Styling */
+.section__text_p1 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Typing Effect */
+.section__text_p2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink-cursor 0.7s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+    50% { opacity: 0; }
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-color-1 {
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.btn-color-1:hover {
+    background-color: #555;
+}
+
+.btn-color-2 {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.btn-color-2:hover {
+    background-color: #f0f0f0;
+}
+
+/* Social Icons Styling */
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+  
+
+.icon {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Larger font size for introductory text */
+.section__text_p1 {
+    font-size: 1.5rem; /* Increase font size */
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Larger font size for name */
+.title {
+    font-size: 3.5rem; /* Increase font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Larger font size for the subtitle text */
+.section__text_p2 {
+    font-size: 2rem; /* Increase font size */
+    color: #555;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* Adjusted button styling to balance the larger text */
+.btn {
+    padding: 1rem 2rem; /* Increase padding for larger buttons */
+    font-size: 1rem; /* Slightly larger font in buttons */
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Adjusting button sizes */
+.btn {
+    padding: 0.6rem 1.5rem; /* Smaller padding for buttons */
+    font-size: 0.9rem; /* Slightly smaller font */
+    border-radius: 20px;
+}
+
+/* Centering the window better */
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Reduced height for a slight upward shift */
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.section__text_p1,
+.title,
+.section__text_p2,
+.btn {
+    font-family: inherit; /* Ensures they inherit the global font */
+}
+
+
+footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+/* Logo Animation */
+#lightning-icon {
+    animation: pulse 1.5s infinite ease-in-out;
+    cursor: default;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1.1); /* Slightly increased base size */
+        filter: drop-shadow(0 0 6px rgba(255, 165, 0, 0.6)); /* Increased shadow intensity */
+    }
+    50% {
+        transform: scale(1.3); /* Increased scale for pulse effect */
+        filter: drop-shadow(0 0 12px rgba(255, 165, 0, 1)); /* More intense glow */
+    }
+}
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Add spacing between the robot and buttons */
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-direction: column; /* Stack the text and buttons */
+    align-items: center;
+  }
+  
+  .tab {
+    max-height: 400px; /* Ensure the tab height is consistent */
+  }
+  
+
+footer {
+    background: #444; /* Light black or dark grey */
+    color: #ddd; /* Slightly lighter text color */
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 1px solid #555; /* Subtle border for separation */
+}
+
+footer a {
+    color: #ccc; /* Lighter grey for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff; /* Brightens on hover */
+}
+
+/* Ensure copyright text is visible */
+footer p {
+    color: #bbb; /* Lighter grey for the copyright text */
+    font-size: 0.9rem; /* Optional: Make it slightly smaller */
+    margin-top: 0.5rem;
+}
+
+
+/* Initially hide all sections */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+/* When section is in view, make it visible */
+section.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/* Projects Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+    margin: 2rem auto;
+}
+
+
+
+/* Project Card Styling */
+.project-card {
+    background: white;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-color: #bbb; /* Slightly darker border on hover */
+}
+
+
+/* Project Image Styling */
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.social-icons a {
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff7e5f;
+    transform: scale(1.2);
+}
+
+.cta-btn {
+    background: #333;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #ff7e5f;
+    transform: translateY(-5px);
+}
+
+
+/* Enhance Experience and Education Boxes */
+.details-container {
+    background: linear-gradient(to right, #f9f9f9, #ffffff); /* Soft gradient */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-container:hover {
+    transform: scale(1.05); /* Slight hover effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    border-color: #feb47b; /* Add a pop of color on hover */
+}
+
+/* Icon and Text Alignment */
+.details-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.details-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* Darker text for titles */
+}
+
+.details-container p {
+    font-size: 1rem;
+    color: #555; /* Softer text for descriptions */
+    line-height: 1.5; /* Improved readability */
+}
+
+
+/* Common Button Styling */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button 1 (Contact Info) */
+.btn-color-1 {
+    background: #333;
+    color: #fff;
+}
+
+.btn-color-1:hover {
+    background: #feb47b;
+    color: #fff;
+    border-color: #feb47b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Button 2 (Download CV) */
+.btn-color-2 {
+    background: #fff;
+    color: #333;
+    border: 2px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-color-2:hover {
+    background: #feb47b;
+    color: #fff;
+    border-color: #feb47b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Button Container Styling */
+.btn-container {
+    display: flex;
+    gap: 1.5rem; /* Space between buttons */
+    justify-content: center; /* Center align buttons */
+    margin-top: 20px;
+}
+
+/* Main Contact Section Container */
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Individual Contact Info Container */
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-container:hover {
+    border-color: #ff7e5f; /* Highlight border on hover */
+    background-color: #fdf3e6; /* Light background on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+
+
+.contact-info-container:hover .contact-icon {
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+
+.contact-info-container:hover a {
+    color: #ff7e5f; /* Change link color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info-upper-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+
+/* General container for each skill */
+.article-container article {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: start; /* Align content to the start */
+    gap: 1rem; /* Space between icon and text */
+    margin-bottom: 1rem; /* Space between skill items */
+}
+
+/* Icon styling */
+.article-container article img {
+    width: 30px; /* Adjust size for consistency */
+    height: 30px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Skill text alignment */
+.article-container article h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem; /* Slightly larger text size */
+    line-height: 1.5; /* Improve readability */
+    font-weight: bold; /* Emphasize the skill text */
+    color: #333; /* Consistent text color */
+}
+
+/* Additional optional padding for balance */
+.article-container {
+    padding: 1rem 1.5rem; /* Adjust padding for aesthetics */
+    background: #fff; /* Keep the container background clean */
+}
+
+

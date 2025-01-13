@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </nav>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <svg id="lightning-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 3L3 14H10L9 21L19 10H12L13 3Z" fill="#FFA500" />
+            </svg>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo"> Maryam Atheeq </div>
+        <div class= "hamburger-menu">
+            <div class= "hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro-section" class="intro-container">
+        <div class="intro-window">
+          <div class="intro-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="intro-content">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title"> Maryam Atheeq </h1>
+            <p class="section__text_p2 typing-text">Electrical Engineering Student<span class="cursor">|</span></p>
+            <!-- Add Flex Container for Robot and Buttons -->
+            <div class="flex-container">
+                <lottie-player
+                  src="https://lottie.host/44811d14-4797-4382-9d4e-141b02094cec/83kLt0EXQ5.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 200px; height: 200px;"
+                  loop
+                  autoplay>
+                </lottie-player>
+                <div class="tab">
+                  <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Assets/Maryam_EE_Resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                  </div>
+                  <div id="socials-container">
+                    <img src="./Assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/maryam-atheeq'" />
+                    <img src="./Assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/maryamatheeq'" />
+                  </div>
+                </div>
+              </div>              
+      </section>
+    
+    <section id="about">
+        <p class="section__text_p1">Learn More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-containers">
+            <!-- Experience Box -->
+            <div class="details-container">
+                <img src="./Assets/experience.png" alt="Experience Icon">
+                <h2>Experience</h2>
+                <p>Two Engineering Co-op Work Terms <br></p>
+            </div>
+            <!-- Education Box -->
+            <div class="details-container">
+                <img src="./Assets/education.png" alt="Education Icon">
+                <h2>Education</h2>
+                <p>Bachelor of Electrical Engineering<br>Class of 2027</p>
+            </div>
+        </div>
+        <!-- Side-by-side GIF and Description below the cards -->
+        <div class="about-content">
+            <!-- GIF on the left side -->
+            <div class="giphy-container">
+                <img src="https://media.giphy.com/media/Cpaq8odLDnHkDlHK1V/giphy.gif" alt="GIF" class="giphy-gif">
+            </div>
+    
+            <!-- Description on the right side -->
+            <div class="about-description">
+                <div class="about-code-window">
+                    <div class="code-window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="about-popup">
+                        <!-- <p>Hi!</p> -->
+                        <p>
+                            I’m a third-year Electrical Engineering student who loves bringing creative ideas to life with a hands-on approach. 
+                            From building circuits to writing code, I’m always excited to take on new challenges and bring ideas to life. 
+                            My journey so far has been fueled by a curiosity for how things work and a passion for solving problems. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#experience '" /> -->
+    </section>
+    <section id="experience">
+        <p class="section__text_p1"> Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="about-containers">
+            <div class="details-container">
+                <!-- <h2 class="experience-sub-title">Frontend Development</h2> -->
+                <div class="article-container">
+                    <!-- Repeat articles for each skill -->
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Arduino UNO</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>PSpice</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MATLAB</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MS Excel</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MS Word</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MS PowerPoint</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>C++</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Python</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <!-- <h2 class="experience-sub-title">Backend Development</h2> -->
+                <div class="article-container">
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Project Management</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>CAD</h3>
+                        </div>
+                    </article>                    
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>SolidWorks</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>IoT Design</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Circuit Design</h3>
+                        </div>
+                    </article>                    
+                </div>
+            </div>
+        </div>
+        <!-- <img 
+            src="./Assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href= './#projects'"
+        /> -->
+    </section>
+
+   <section id="projects">
+        <p class="section__text_p1">Dive into my</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+<!-- First Row -->
+<div class="project-card">
+    <img src="./Assets/Snake Game.png" alt="Project One" class="project-img">
+    <h2 class="experience-sub-title project-title">Slither and Score</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Snake-Game-'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://slitherandscore.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Tic Tac Toe.jpg" alt="Project Two" class="project-img">
+    <h2 class="experience-sub-title project-title">Classic Tic Tac Toe</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Tic-Tac-Toe'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://classictictac.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/To Do List.png" alt="Project Three" class="project-img">
+    <h2 class="experience-sub-title project-title">Task Tracker</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/To-Do-List'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://tasklisttrack.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<!-- Second Row -->
+<div class="project-card">
+    <img src="./Assets/Calculator.png" alt="Project Four" class="project-img">
+    <h2 class="experience-sub-title project-title">QuickCalc</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Caculator-App-HTML-CSS-JS'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://quickcalcu.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Greenhouse.png" alt="Project Five" class="project-img">
+    <h2 class="experience-sub-title project-title">Arduino Plant Monitor</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Arduino-Greenhouse-Monitoring-System'">
+            Github
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Heart Rate.png" alt="Project Six" class="project-img">
+    <h2 class="experience-sub-title project-title">Pulse Tracker with Arduino</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq'">
+            Github
+        </button>
+    </div>
+</div>
+<!-- Third Row -->
+<div class="project-card">
+    <img src="./Assets/Smart Security Light System.jpg" alt="Arduino Security Light System" class="project-img">
+    <h2 class="experience-sub-title project-title">Arduino Security Light System</h2>
+</div>
+<div class="project-card">
+    <img src="./Assets/RC Boat.jpg" alt="Remote-Controlled Boat Project" class="project-img">
+    <h2 class="experience-sub-title project-title">Remote-Controlled Boat Project</h2>
+</div>
+<div class="project-card">
+    <img src="./Assets/Powered Speaker Circuit.jpg" alt="Speaker Driver Circuit" class="project-img">
+    <h2 class="experience-sub-title project-title">Powered Speaker Driver Circuit</h2>
+</div>
+    <!-- <img 
+        src="./Assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href= './#contact'"
+        /> -->
+    </section>
+
+    <section id="contact">
+        <p class="section__text_p1">Let's Connect!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <!-- Email -->
+            <div class="contact-info-container">
+                <img 
+                    src="./Assets/email.png" 
+                    alt="Email icon" 
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">matheequrrah@mun.ca</a></p>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-info-container">
+                <img 
+                    src="./Assets/linkedin.png" 
+                    alt="LinkedIn icon" 
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/maryam-atheeq">maryam_atheeq</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class=" nav-links">
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Skills</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2024 Maryam Atheeq. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
