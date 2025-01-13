@@ -32,3 +32,20 @@ function toggleMenu() {
         type();
     });
 
+document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("appear");
+                    observer.unobserve(entry.target); // Stop observing once it's visible
+                }
+            });
+        }, {
+            threshold: 0.2, // Trigger when 20% of the section is in view
+        });
+    
+        sections.forEach(section => observer.observe(section));
+    });
+
