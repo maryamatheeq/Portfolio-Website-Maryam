@@ -1179,10 +1179,19 @@ section.appear {
     background: #fff; /* Keep the container background clean */
 }
 
-#projects {
+/* #projects {
     display: block;
     height: auto;
     overflow: visible;
     padding: 2rem 1rem;
+} */
+
+#projects {
+    display: block;
+    margin: 0 auto; /* Center it */
+    padding: 1rem; /* Add spacing */
+    width: 100%; /* Ensure it fits the screen */
+    overflow: visible; /* Prevent clipping */
 }
+
 
